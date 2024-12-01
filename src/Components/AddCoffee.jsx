@@ -14,7 +14,7 @@ const AddCoffee = () => {
     const photo = form.photo.value;
     const newCoffees = {name, chef, supplier, taste, category, details, photo};
     console.log(newCoffees);
-    fetch('http://localhost:5000/coffees',{
+    fetch('https://coffee-hub-server-zeta.vercel.app/coffees',{
       method:'POST',
       headers:{
         'content-type': 'application/json'
